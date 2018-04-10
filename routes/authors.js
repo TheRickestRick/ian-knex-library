@@ -2,33 +2,14 @@ const express = require('express');
 const router = express.Router();
 const knex = require('../db/knex');
 
-router.get('/authors', (req, res)=>{
+
+
+router.get('/', (req, res)=>{
     knex('authors')
-    .select('*')
     .then((data)=>{
-      res.json(data);
+      res.render('authors/index', {data});
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

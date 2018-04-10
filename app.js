@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-// var express = require("express");
-// var app = express();
-const knex = require('./db/knex.js');
-
-
-knex.select('*').from('authors').then(function(data){
-  console.log(data);
-})
-
-//
-// module.exports = {
-//   app
-// }
-=======
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
@@ -35,4 +20,3 @@ app.listen(PORT, () => {
 module.exports = {
 	app
 };
->>>>>>> 372555a18c096942e95a920ca1bdb923dd7bc0a1
