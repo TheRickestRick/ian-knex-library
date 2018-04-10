@@ -3,12 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Authors Index</title>
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <ul>
-      <% for (let author of authors) { %>
-      <li>Name: <%= author.name %> | Age: <%= author.age %></li>
-      <% } %>
-    </ul>
+    <div id="container">
+      <h1>Authors</h1>
+      <ul id="authors">
+        <% for (let author of authors) { %>
+        <li class="author">Name: <%= author.name %> | Age: <%= author.age %><br>
+        <span class="button__view"><a href="/authors/<%=author.id%>">View</a></span><span class="button__edit"><a href="/authors/<%=author.id%>/edit">Edit</a></span>
+        </li>
+        <% } %>
+      </ul>
+    </div>
   </body>
 </html>
