@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Authors Index</title>
+  </head>
+  <body>
+    <ul>
+      <% for (let author of authors) { %>
+      <li>Name: <%= author.name %> | Age: <%= author.age %></li>
+      <% } %>
+    </ul>
+  </body>
+</html>
