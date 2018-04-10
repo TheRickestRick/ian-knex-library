@@ -11,6 +11,20 @@ router.get('/', (req, res)=>{
     });
 });
 
+router.get('/new', (req, res)=>{
+  res.render('authors/new');
+})
+
+
+
+router.post('/', (req, res)=>{
+  knex('authors')
+  .insert(req.body)
+  .then((author)=>{
+    res.redirect('/')
+  });
+});
+
 
 
 
