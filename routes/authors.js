@@ -6,8 +6,8 @@ const knex = require('../db/knex');
 
 router.get('/', (req, res)=>{
     knex('authors')
-    .then((data)=>{
-      res.render('authors/index', {data});
+    .then((authors)=>{
+      res.render('authors/index', {authors});
     });
 });
 
