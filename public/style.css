@@ -1,0 +1,23 @@
+body,
+html {
+	font-family: monospace;
+}
+
+fieldset {
+	border: 2px dashed black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+form {
+	font-size: 2rem;
+	max-width: 40%;
+	margin: 0 auto;
+	display: block;
+}
+
+input,
+button {
+	font-size: 1.5rem;
+}
