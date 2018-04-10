@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Single Author</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id="container">
+      <h1><%= author.name %></h1>
+      <h2><%= author.age %></h2>
+      <div class="button__edit">
+        <a href="/authors/<%=author.id%>/edit">EDIT</a>
+      </div>
+    </div>
+  </body>
+</html>
