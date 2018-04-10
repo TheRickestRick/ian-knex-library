@@ -21,7 +21,7 @@ router.post('/', (req, res)=>{
   knex('authors')
   .insert(req.body)
   .then((author)=>{
-    res.redirect('/')
+    res.redirect('/authors')
   });
 });
 
